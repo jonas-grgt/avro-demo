@@ -1,0 +1,24 @@
+namespace io.jonasg;
+
+enum Status {
+	DRAFT,
+	PUBLISHED,
+	UNKNOWN
+} = UNKNOWN;
+
+record PostProperties {
+	string author;
+	string category;
+	string language;
+}
+
+record BlogPostCreated {
+	string id;
+	string title;
+	string content;
+	array<string> tags;
+	Status status = "DRAFT";
+	@logicalType("timestamp-millis")
+	long timestamp;
+	PostProperties properties;
+}

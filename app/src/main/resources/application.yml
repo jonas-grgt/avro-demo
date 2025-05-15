@@ -1,0 +1,17 @@
+app:
+  topics:
+    orders: ${ENV}.orders
+
+spring:
+  kafka:
+    client-id: ${ENV}.avro-demo
+    properties:
+      avro.remove.java.properties: true
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        specific.avro.reader: true
