@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.jonasg</groupId>
-		<artifactId>avro-demo</artifactId>
+		<artifactId>testing-kafka-with-spring</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 

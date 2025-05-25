@@ -12,10 +12,10 @@
 	</parent>
 
 	<groupId>io.jonasg</groupId>
-	<artifactId>avro-demo</artifactId>
+	<artifactId>testing-kafka-with-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>avro-demo</name>
-	<description>avro-demo</description>
+	<name>testing-kafka-with-spring</name>
+	<description>testing-kafka-with-spring</description>
 	<packaging>pom</packaging>
 
 	<modules>

@@ -4,5 +4,3 @@ spring:
   kafka:
     properties:
       schema.registry.url: "mock://"
-    consumer:
-      auto-offset-reset: earliest

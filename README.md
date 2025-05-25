@@ -1,11 +1,8 @@
-# Java Avro (IDL) Kafka Schema Registry Maven Demo
+# Testing a sping-kafka based application
 
-This is a small demo application that accompanies my [blog post](https://jonasg.io/posts/avro-schemas-with-kafka-and-java-my-practical-workflow/) showing how to define AVRO 
-schemas in AVDL and generate Java classes from them using Maven. 
+This small demo application accompanies my post on testing a Spring-Kafka based application.
 
-It also shows how to publish those schemas onto the
-Confluent Schema Registry.
-
+http://jonasg.io/posts/kafka-testing-strategies-with-spring
 
 
 

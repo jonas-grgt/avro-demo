@@ -1,11 +1,11 @@
-package io.jonasg.avro;
+package io.jonasg.bank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AvroDemoApplication {
+public class BankApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AvroDemoApplication.class, args);
+        SpringApplication.run(BankApplication.class, args);
     }
 }
