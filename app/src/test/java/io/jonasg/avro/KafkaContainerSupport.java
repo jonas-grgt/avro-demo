@@ -1,14 +1,16 @@
-package io.jonasg.bank;
+package io.jonasg.avro;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.testcontainers.kafka.KafkaContainer;
+import org.testcontainers.kafka.ConfluentKafkaContainer;
+import org.testcontainers.utility.DockerImageName;
 
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 
 public interface KafkaContainerSupport {
 
     @ServiceConnection
-    KafkaContainer kafkaContainer = new KafkaContainer("apache/kafka-native:3.8.0")
+    ConfluentKafkaContainer kafkaContainer = new ConfluentKafkaContainer(
+            DockerImageName.parse("confluentinc/cp-kafka:7.8.0"))
             .withReuse(true)
             .withExposedPorts(9092, 9093);
 
